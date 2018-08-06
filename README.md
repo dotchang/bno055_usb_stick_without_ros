@@ -1,6 +1,6 @@
 # bno055_usb_stick_without_ros
-This is a fork of https://github.com/yoshito-n-students/bno055_usb_stick, without ROS.
-Tested on Windows10 64bit MSVC environment.
+This is a fork of https://github.com/yoshito-n-students/bno055_usb_stick
+, without ROS. Tested on Windows10 64bit MSVC environment.
 
 ## Device
 Bosch BNO055 USB Stick http://www.mouser.jp/new/bosch/bosch-bno055-usb-stick/
