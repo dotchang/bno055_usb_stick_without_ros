@@ -30,10 +30,10 @@ void publish(const bno055_usb_stick_msgs::Output &output, const std::string &fix
 			  << output.euler_angles.y << " "
 			  << output.euler_angles.z << std::endl;
 	std::cout << "Qua: "
-			  << output.quaternion.x << " "
-			  << output.quaternion.y << " "
-			  << output.quaternion.z << " "
-			  << output.quaternion.w << std::endl;
+			  << output.quaternion.x() << " "
+			  << output.quaternion.y() << " "
+			  << output.quaternion.z() << " "
+			  << output.quaternion.w() << std::endl;
 	std::cout << "Lia: "
 			  << output.linear_acceleration.x << " "
 			  << output.linear_acceleration.y << " "
