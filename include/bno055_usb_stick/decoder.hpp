@@ -52,17 +52,17 @@ private:
 
   static ofVec3f decodeGyr(const boost::uint8_t *data) {
     ofVec3f gyr;
-    gyr.x = decodeVal(data[1], data[0], Constants::GYR_DENOM) * M_PI / 180.;
-    gyr.y = decodeVal(data[3], data[2], Constants::GYR_DENOM) * M_PI / 180.;
-    gyr.z = decodeVal(data[5], data[4], Constants::GYR_DENOM) * M_PI / 180.;
+    gyr.x = decodeVal(data[1], data[0], Constants::GYR_DENOM) * PI / 180.;
+    gyr.y = decodeVal(data[3], data[2], Constants::GYR_DENOM) * PI / 180.;
+    gyr.z = decodeVal(data[5], data[4], Constants::GYR_DENOM) * PI / 180.;
     return gyr;
   }
 
   static ofVec3f decodeEul(const boost::uint8_t *data) {
     ofVec3f eul;
-    eul.x = decodeVal(data[1], data[0], Constants::EUL_DENOM) * M_PI / 180.; // heading
-    eul.y = decodeVal(data[3], data[2], Constants::EUL_DENOM) * M_PI / 180.; // roll
-    eul.z = decodeVal(data[5], data[4], Constants::EUL_DENOM) * M_PI / 180.; // pitch
+    eul.x = decodeVal(data[1], data[0], Constants::EUL_DENOM) * PI / 180.; // heading
+    eul.y = decodeVal(data[3], data[2], Constants::EUL_DENOM) * PI / 180.; // roll
+    eul.z = decodeVal(data[5], data[4], Constants::EUL_DENOM) * PI / 180.; // pitch
     return eul;
   }
 
